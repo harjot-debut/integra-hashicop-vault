@@ -94,5 +94,5 @@ echo $UNSEAL_KEY_BASE
 
 echo 
 
-echo "Root key:"
+echo "Token:"
 echo $ROOT_KEY
