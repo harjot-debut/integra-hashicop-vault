@@ -35,20 +35,24 @@ echo""
 # sudo apt update && sudo apt install vault
 
 
-set -x
+#set -x
 
-sudo apt-get update && sudo apt-get upgrade -y
-sudo apt install net-tools
-
-
-wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install vault
-
-set +x
+#sudo apt-get update && sudo apt-get upgrade -y
+#sudo apt install net-tools
 
 
-systemctl daemon-reload
-systemctl start vault
-systemctl enable vault
-systemctl status vault
+#wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+#echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+#sudo apt update && sudo apt install vault
+
+#set +x
+
+
+#systemctl daemon-reload
+#systemctl start vault
+#systemctl enable vault
+#systemctl status vault
+
+
+
+sudo snap install vault
