@@ -1,4 +1,5 @@
 
+
 ### SETUP VAULT 
 
 - Clone the Hashicop vault repository at home directory :-
@@ -7,7 +8,7 @@
 - Go to cloned repo 
 `cd $HOME/integra-hashicop-vault`
 
-Install hashicop vault (if not already) using command :-  
+- Install hashicop vault (if not already) using command :-  
 `./install-vault.sh`
 
 - Setup and start vault container using command :-
@@ -21,9 +22,10 @@ Install hashicop vault (if not already) using command :-
 
 ## Vault Restart Instructions
 
-- If Vault stops due to any reasons, follow these steps to restart it:-
+### If Vault stops due to any reasons, follow these steps to restart it:-
+- Go to vault directory in VM using command :-
 `cd $HOME/integra-hashicop-vault`
 
--Restart vault using command :-
+- Restart vault using command :-
 `./restart-vault.sh`
   
